@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiares</title>
+</head>
+<body>
+    {%from familiares in familia%}
+    <div>
+        <p>nombre: {{familiares.nomnre}}</p>
+        <p>parentesco: {{familiares.parentesco}}</p>
+        <p>dni:{{familiares.dni}}</p>
+        <p>fecha_nacimiento: {{familiares.fecha_nacimiento}}</p>
+    </div>
+    {%end for%}
+    
+</body>
+</html>
