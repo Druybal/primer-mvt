@@ -7,9 +7,9 @@
     <title>Familiares</title>
 </head>
 <body>
-    {%from familiares in familia%}
+    {%for familiares in familia%}
     <div>
-        <p>nombre: {{familiares.nomnre}}</p>
+        <p>nombre: {{familiares.nombre}}</p>
         <p>parentesco: {{familiares.parentesco}}</p>
         <p>dni:{{familiares.dni}}</p>
         <p>fecha_nacimiento: {{familiares.fecha_nacimiento}}</p>
